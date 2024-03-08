@@ -42,7 +42,7 @@ public class MineSweeper { // Degerlendirme form 5
             System.out.print("Choose a column: ");
             userCol = input.nextInt() - 1;
 
-            if (row >= userRow + 1 && userRow + 1 >= 0 && col >= userCol + 1 && userCol + 1 >= 0){ // Degerlendirme form 10 - Checking if the user value is in the boundaries of game board or not. If it is not program ask for a valid value.
+            if (row >= userRow + 1 && userRow + 1 >= 0 && col >= userCol + 1 && userCol + 1 >= 0 && userCol + 1 != 0 && userRow + 1 != 0){ // Degerlendirme form 10 - Checking if the user value is in the boundaries of game board or not. If it is not program ask for a valid value.
                 if (adminMatrix[userRow][userCol] == "*"){ // Degerlendirme form 6
                     System.out.println("You have stepped into MINE! You LOST! Game over."); // Degerlendirme form 13, 15 - If user founds a mine this scope works and game ends.
                     break;
